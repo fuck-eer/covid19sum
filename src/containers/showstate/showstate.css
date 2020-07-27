@@ -1,21 +1,9 @@
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+tr{
+}
+tr:hover{
+background: linear-gradient(to right ,rgba(0, 0, 0, 0.103),rgba(0, 0, 0, 0.068)) ;
+}
 
-  .ram{
-      font-size: large;
-      text-align: center;
-      color: aqua;
-  }
+td{
+  text-transform: uppercase;
+}

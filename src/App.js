@@ -25,8 +25,7 @@ componentDidMount(){
   .catch(()=>console.log("out of data we are!"));
 
   axios.get('https://api.covid19india.org/state_district_wise.json')
-  .then(res=>{this.setState({districtwise:res.data})
-console.log(res.data)})
+  .then(res=>{this.setState({districtwise:res.data})})
   .catch(()=>console.log("out of data we are!"));
 
 }
@@ -76,15 +75,15 @@ showstate=this.state.statewise.map(e=>{
 
 
     return (<Auxi>
-    <h1 style={{textAlign:'center',fontSize:'120px',fontWeight:'lighter'}}>COVID-19 Summary</h1>
+    <h1>COVID-19 Summary</h1>
       <table>
       <thead>
-  <tr>
-    <th>State</th>
-    <th>Confirmed</th>
-    <th>Active</th>
-    <th>recoverd</th>
-    <th>updated last</th>
+  <tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header">
+    <th style={{color:"Black"}}>State</th>
+    <th style={{color:"maroon"}}>Confirmed</th>
+    <th style={{color:"orange"}}>Active</th>
+    <th style={{color:"Green"}}>recoverd</th>
+    <th style={{color:"Black"}}>updated last</th>
   </tr>
   </thead>
   
