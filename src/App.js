@@ -69,6 +69,8 @@ showstate=this.state.statewise.map(e=>{
   <Showstate state={e} key={e.state} clicked={()=>this.districttoggle(e.statecode) } selected={this.state.selectedis} codee={this.state.codee}/>
  
 
+
+  
 );})
 
 
