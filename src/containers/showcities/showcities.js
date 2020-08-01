@@ -1,19 +1,58 @@
-import React from 'react'
-import Showcity from './showcity/showcity'
+import React, { Component } from 'react'
+import Showcity from '../../components/showcity/showcity'
 import Auxi from '../../hoc/Auxi/Auxi'
+import axios from 'axios'
+import Spinner from '../../components/UI/Spinner/Spinner'
 
 
-const showcities=(props)=>{
-    const k=Object.keys(props.data)
-    const l=Object.values(props.data)
-    let city=k.map((e,i) =>(<Showcity name={e} confirmed={l[i].confirmed} active={l[i].active} recovered={l[i].recovered} key={e}  />))
 
-    return(<Auxi>
+class showcities extends Component{
 
-{city}
+state={
+    districtwise:null,
+    code:this.props.code,
 
-    </Auxi>
-    );
+}
+
+componentDidMount(){
+  
+    axios.get('https://api.covid19india.org/state_district_wise.json')
+    .then(res=>{this.setState({districtwise:res.data})})
+    .catch(()=>console.log("out of data we are!"));
+  
+  }
+
+
+
+    render(){
+
+let cities=<Spinner />
+
+        if(this.state.districtwise){
+            const k=Object.values(this.state.districtwise)
+
+        k.forEach(e=>{
+         if(e.statecode===this.state.code)
+         {let l=Object.keys(e.districtData)
+         let m=Object.values(e.districtData)
+        cities=l.map((el,i)=>{
+            return(
+                <Showcity name={el} active={m[i].active} confirm={m[i].confirmed} recover={m[i].recovered} key={el+m[i].active}/>
+            );
+        })
+         }   
+        });
+
+        }
+
+        // console.log(cities)
+
+       return(
+<Auxi>
+        {cities}
+</Auxi>
+        );
+    }
 };
 
 export default showcities;
