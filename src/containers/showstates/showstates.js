@@ -41,12 +41,12 @@ if(this.state.statewise){
     if(this.state.isSelected ){
       citywise=<Auxi><br/><br/><p style={{textAlign:"center",fontSize:'13px',marginLeft:'220%',textTransform:'uppercase', color:'#f7f5dd'}}>Districts</p>
       
-<tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header">
- <th style={{color:"#aacdbe",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>DISTRICT</th> 
- <th style={{color:"skyblue",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>ACTIVE</th>
- <th style={{color:"orange",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>CONFIRMED</th>
- <th style={{color:"lightGreen",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>RECOVERED</th>
- <th style={{color:"white",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>UPDATED ON</th>
+<tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header shw">
+ <th style={{color:"#aacdbe", padding:'8px',borderRadius:'8px'}}>DISTRICT</th> 
+ <th style={{color:"skyblue", padding:'8px',borderRadius:'8px'}}>ACTIVE</th>
+ <th style={{color:"orange", padding:'8px',borderRadius:'8px'}}>CONFIRMED</th>
+ <th style={{color:"lightGreen", padding:'8px',borderRadius:'8px'}}>RECOVERED</th>
+ <th style={{color:"white", padding:'8px',borderRadius:'8px'}}>UPDATED ON</th>
 </tr>
 
       <Showcities code={this.state.selcode} />

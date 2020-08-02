@@ -6,3 +6,7 @@ background: linear-gradient(to right ,rgba(0, 0, 0, 0.103),rgba(0, 0, 0, 0.068))
 td{
   text-transform: uppercase;
 }
+.shw th{
+  font-size: 10px;
+  text-align: center;
+}
