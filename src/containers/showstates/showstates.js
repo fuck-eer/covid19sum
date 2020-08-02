@@ -39,7 +39,18 @@ if(this.state.statewise){
   statewise=this.state.statewise.map(e=>{
     
     if(this.state.isSelected ){
-      citywise=<Auxi><br/><br/><p style={{textAlign:"center",fontSize:'17px',marginLeft:'220%',textTransform:'uppercase'}}>Districts</p><Showcities code={this.state.selcode} /><p style={{textAlign:"center", fontSize:'13px',display:'block' ,marginLeft:'220%', textTransform:'uppercase'}}>End</p><br/><br/></Auxi>
+      citywise=<Auxi><br/><br/><p style={{textAlign:"center",fontSize:'13px',marginLeft:'220%',textTransform:'uppercase', color:'#f7f5dd'}}>Districts</p>
+      
+<tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header">
+ <th style={{color:"#aacdbe",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>DISTRICT</th> 
+ <th style={{color:"skyblue",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>ACTIVE</th>
+ <th style={{color:"orange",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>CONFIRMED</th>
+ <th style={{color:"lightGreen",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>RECOVERED</th>
+ <th style={{color:"white",fontSize:'15px', padding:'8px',borderRadius:'8px'}}>UPDATED ON</th>
+</tr>
+
+      <Showcities code={this.state.selcode} />
+      <p style={{textAlign:"center", fontSize:'13px',display:'block' ,marginLeft:'220%', textTransform:'uppercase' ,color:'#f7f5dd'}}>End</p><br/><br/></Auxi>
     }
 
   return(
@@ -64,11 +75,11 @@ if(this.state.statewise){
 <table>
 <thead>
 <tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header">
- <th style={{color:"Black"}}>STATE</th>
- <th style={{color:"maroon"}}>ACTIVE</th>
- <th style={{color:"orange"}}>CONFIRMED</th>
- <th style={{color:"Green"}}>RECOVERED</th>
- <th style={{color:"Green"}}>UPDATED ON</th>
+ <th style={{color:"white", position:'sticky',top:'0',backgroundColor:"#222831"}}>STATE</th> 
+ <th style={{color:"skyblue", position:'sticky',top:'0',backgroundColor:"#222831"}}>ACTIVE</th>
+ <th style={{color:"orange", position:'sticky',top:'0',backgroundColor:"#222831"}}>CONFIRMED</th>
+ <th style={{color:"lightGreen", position:'sticky',top:'0',backgroundColor:"#222831"}}>RECOVERED</th>
+ <th style={{color:"white", position:'sticky',top:'0',backgroundColor:"#222831"}}>UPDATED ON</th>
 </tr>
 </thead>
 <tbody>

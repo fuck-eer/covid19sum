@@ -15,7 +15,7 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    background-color: #07f894;
+    background-color: rgb(255, 182, 46);
     border-radius: 100%;
     
     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
@@ -23,7 +23,7 @@
   }
   
   .dot2 {
-    background-color: #00eaff;
+    background-color: rgb(255, 95, 36);
 
     top: auto;
     bottom: 0;

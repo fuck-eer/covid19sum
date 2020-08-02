@@ -9,11 +9,11 @@ const showcity=(props)=>{
 
 
   <tr >
-        <td style={{color:"Black"}}>{props.name}</td>
-        <td style={{color:"Black"}}>{props.active}</td>
-        <td style={{color:"Black"}}>{props.confirm}</td>
-        <td style={{color:"Black"}}>{props.recover}</td>
-        <td>---</td>
+        <td style={{color:"#aacdbe"}}>{props.name}</td>
+        <td style={{color:"skyblue"}}>{props.active}</td>
+        <td style={{color:"orange"}}>{props.confirm}</td>
+        <td style={{color:"lightgreen"}}>{props.recover}</td>
+        <td style={{color:"#f7f5dd"}}>---</td>
   </tr>
  
 
