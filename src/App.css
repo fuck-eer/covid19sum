@@ -51,9 +51,9 @@ td{
 body{
   /* background: -webkit-linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #25c481, #25b7c4); */
-  background: -webkit-linear-gradient(left,  #040f33b2 ,rgb(39, 39, 39));
-  background: linear-gradient(to right, rgb(39, 39, 39), #040f33b2);
-  
+  /* background: -webkit-linear-gradient(left,  #040f33b2 ,rgb(39, 39, 39));
+  background: linear-gradient(to right, rgb(39, 39, 39), #040f33b2); */
+  background: #161625;
   font-family: 'Roboto', sans-serif;
 }
 section{
