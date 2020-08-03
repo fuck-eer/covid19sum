@@ -1,18 +1,20 @@
 import React from 'react'
 import './showstate.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import{faCaretUp} from '@fortawesome/free-solid-svg-icons'
 
 
 const showstate=(props)=>{
 
-  
+  const eleicon=<FontAwesomeIcon icon={faCaretUp}/>
 return(
    
     <tr onClick={props.click}>
     <td style={{color:"whitesmoke"}}>{props.name}</td>
-    <td style={{color:"skyblue",textAlign:'center'}}>{props.active}</td>
-    <td style={{color:"orange",textAlign:'center'}}>{props.confirm}</td>
-    <td style={{color:"lightgreen", textAlign:'center'}}>{props.recover}</td>
-    <td style={{color:"whitesmoke", textAlign:'center'}}>{props.update}</td>
+    <td className='dispfle'><span style={{color:'#f5f1da'}} className='dolo'>{props.confirm}</span><span className='daily'>{eleicon}  {props.delcnf} </span></td>
+    <td className='actt'>{props.active}</td>
+    <td className='dispfle'><span style={{color:'#f5f1da'}} className='dolo'>{props.recover}</span><span style={{color:'#00ff00'}} className='daily'> {eleicon} {props.delrec}</span></td>
+    <td className='actt'>{props.update}</td>
     </tr>
 
 

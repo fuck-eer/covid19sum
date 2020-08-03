@@ -37,7 +37,7 @@ let cities=<Spinner />
          let m=Object.values(e.districtData)
         cities=l.map((el,i)=>{
             return(
-                <Showcity name={el} active={m[i].active} confirm={m[i].confirmed} recover={m[i].recovered} key={el+m[i].active}/>
+                <Showcity name={el} active={m[i].active} confirm={m[i].confirmed} recover={m[i].recovered} delcnf={m[i].delta.confirmed} delrec={m[i].delta.recovered} key={el+m[i].active}/>
             );
         })
          }   

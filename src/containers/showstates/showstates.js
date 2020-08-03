@@ -43,8 +43,8 @@ if(this.state.statewise){
       
 <tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header shw">
  <th style={{color:"#aacdbe", padding:'8px',borderRadius:'8px'}}>DISTRICT</th> 
- <th style={{color:"skyblue", padding:'8px',borderRadius:'8px'}}>ACTIVE</th>
  <th style={{color:"orange", padding:'8px',borderRadius:'8px'}}>CONFIRMED</th>
+ <th style={{color:"skyblue", padding:'8px',borderRadius:'8px'}}>ACTIVE</th>
  <th style={{color:"lightGreen", padding:'8px',borderRadius:'8px'}}>RECOVERED</th>
  <th style={{color:"white", padding:'8px',borderRadius:'8px'}}>UPDATED ON</th>
 </tr>
@@ -55,7 +55,7 @@ if(this.state.statewise){
 
   return(
     <Auxi key={e.statecode}>
-  <Showstate name={e.state} active={e.active} confirm={e.confirmed} recover={e.recovered} update={e.lastupdatedtime.split(' ')[0]}  click={()=>this.clickHandler(e.statecode)} />
+  <Showstate name={e.state} active={e.active} confirm={e.confirmed} recover={e.recovered} delcnf={e.deltaconfirmed} delrec={e.deltarecovered} update={e.lastupdatedtime.split(' ')[0]}  click={()=>this.clickHandler(e.statecode)} />
   {e.statecode===this.state.selcode?citywise:null}
 </Auxi>
   );
@@ -76,8 +76,8 @@ if(this.state.statewise){
 <thead>
 <tr style={{textDecoration:"uppercase", textAlign:'center'}} className="tbl-header">
  <th style={{color:"white", position:'sticky',top:'0',backgroundColor:"#222831"}}>STATE</th> 
- <th style={{color:"skyblue", position:'sticky',top:'0',backgroundColor:"#222831"}}>ACTIVE</th>
  <th style={{color:"orange", position:'sticky',top:'0',backgroundColor:"#222831"}}>CONFIRMED</th>
+ <th style={{color:"skyblue", position:'sticky',top:'0',backgroundColor:"#222831"}}>ACTIVE</th>
  <th style={{color:"lightGreen", position:'sticky',top:'0',backgroundColor:"#222831"}}>RECOVERED</th>
  <th style={{color:"white", position:'sticky',top:'0',backgroundColor:"#222831"}}>UPDATED ON</th>
 </tr>

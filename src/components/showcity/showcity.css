@@ -1,0 +1,55 @@
+
+
+.dispfle{
+    display:flex;
+    flex-flow: row;
+    justify-content: left;
+    align-items: center;
+    
+    /* flex-basis: 80%; */
+  
+}
+.daily{
+    color:red;
+    padding-left:10px;
+    font-size: 10px;
+   font-weight: 300;
+justify-self:left; 
+align-self: flex-end;
+flex: 3;
+
+
+}
+.dolo{
+flex: 3;
+    font-size: 13px;
+text-align: right; 
+justify-items: center;
+   align-self: center;
+  
+}
+
+.actt{
+    color: #f5f1da;
+    text-align: center;
+}
+
+@media screen and (max-width:560px){
+
+    .dispfle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dolo{
+        font-size: 10px;
+        justify-self:left; 
+align-self: flex-end;   
+    }
+
+    .actt{
+        text-align: right;
+    }
+    
+    }
+
