@@ -1,15 +1,29 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "covidindia",
+  "name": "covid19summary",
   "icons": [
     {
       "src": "favi.ico",
-      "sizes": "64x64 48x48 32x32 24x24 16x16",
+      "sizes": "48x48",
       "type": "image/x-icon"
+    },
+    {
+      "src": "/android-icon-192x192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density":"1.0"
+    },
+    {
+      "src": "/output-onlinepngtools",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density":"1.0"
     }
+   
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#161625",
+  "orientation":"portrait"
 }

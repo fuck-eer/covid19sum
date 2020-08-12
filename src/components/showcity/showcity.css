@@ -1,4 +1,8 @@
+.nochange{
+    text-align: center;
+    font-size: 13px;
 
+}
 
 .dispfle{
     display:flex;
@@ -49,6 +53,10 @@ align-self: flex-end;
 
     .actt{
         text-align: right;
+    }
+
+    .nochange{
+        font-size: 10px;
     }
     
     }
