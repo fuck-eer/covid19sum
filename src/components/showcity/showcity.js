@@ -13,13 +13,13 @@ const showcity = props => {
     changecnf = (
       <span>
         {eleicon}
-        <CountUp end={props.delcnf} />
+        <CountUp end={props.delcnf} start={props.delcnf-100} />
       </span>
     )
     changerec = (
       <span>
         {eleicon}
-        <CountUp end={props.delrec} />
+        <CountUp end={props.delrec} start={props.delrec-100} />
       </span>
     )
   }
